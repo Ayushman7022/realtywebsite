@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+           
+           background-color: rgb(255, 255, 255);
+           
+        }
+
+        
+        .nav-links{
+            flex:1;
+            text-align:right  ;
+        }
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            text-decoration: none;
+            position: relative;
+        }
+        .nav-links ul li a{
+            color: rgb(5, 12, 19);
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Poppins', sans-serif;
+        }
+       
+        .nav-links ul li::after{
+            content:'';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        .textbox{
+            position: absolute;
+            left: 800px;
+            margin-top: -75px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .welcome{
+            top: 20%;
+            position: relative;
+            right: 650px;
+            font-size: 80px;
+            padding-top: 10px;
+            
+        }
+        
+    
+        .available-property{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 100px;
+            
+        }
+        .image{
+            
+            text-align: center;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .row p{
+            color:black;
+            font-size: 24px;
+            font-weight: 12%;
+            line-height: 2 ;
+            box-sizing:content-box;
+            
+        }
+        .row{
+            margin-top:5%;
+            display:flex;
+            justify-content: space-between;
+            
+            
+
+        }
+        .course-col{
+            flex-basis: 21%;
+            background: #ada7a7;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            padding: 20px 12px;
+            box-sizing: border-box;
+            height: 500px;
+            box-shadow: 10px 10px;
+            
+
+        }
+        
+        
+        h3{
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+            font-size: 40px;
+            
+        }
+        .available-property h1{
+            font-size: 50px;
+        }
+      .header a img{
+        width: 100px;
+      }
+            /*------------- course---------*/
+        
+      
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+        <a href="#"> <img src="Propert1.jpg"></a>
+        <div class="nav-links">
+        <ul>
+            <li> <a href="file:///C:/Users/Ayushman/Desktop/New%20folder/hello.html"> Home</a></li>
+            
+            <li> <a href="file:///C:/Users/Ayushman/Desktop/Realty%20website/project2.html"> property for sale</a></li>
+            <li> <a href="file:///C:/Users/Ayushman/Desktop/Realty%20website/contact.html"> Contact us</a></li>
+            <li> <a href="file:///C:/Users/Ayushman/Desktop/Realty%20website/Loginform.html"> Login </a></li>
+        </ul>
+    </div>
+        </nav>
+        
+
+       <div class="image">
+        <img src="Propert1.jpg" >
+        </div>
+    
+      
+
+        <div class="textbox">
+            <h2> World's number one realty site</h2>
+        </div>
+
+
+    </div>
+
+    </section>
+
+ 
+    <section class="available-property">
+
+        <h1> Why Choose Us ? </h1>
+        
+        <div class="row">
+            <div class="course-col">
+                <h3> Green </h3>
+                <p>Our homes are enviromently sustainable . Sustainably sourced,
+                    environmentally friendly, and/or recycled building materials.
+                </p>
+
+            </div>
+            <div class="course-col">
+                <h3> Earthquake resistant</h3>
+                <p>Our homes are earthquake resistant , it can handle upto 7.5 richer 
+                    scale. 
+                </p>
+
+            </div>
+            <div class="course-col">
+                <h3> Best Homes</h3>
+                <p>We have best designed homes eqqupied with modern facilities.
+                    We also offer 70% automated home , which is the first of its kind in 
+                    the market.
+                </p>
+
+            </div>
+        </div>
+    </section>
+   <!-----Another section----->
+
+   
+
+    
+</body>
+</html>

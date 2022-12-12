@@ -1,0 +1,398 @@
+
+<html>
+<head>
+	<title>Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 20px 0 10px;
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding:50px;
+  border-radius: 5px;
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 10px;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+body {
+  font-family: sans-serif;
+ 
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: black;
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+---------------------------
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+ 
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+  <div class="menu-bar">
+    <h1 class="logo">Alchemy<span style="color: rgb(219, 162, 39);">Real Estate.</span></h1>
+    <ul>
+      
+      <li><a href="#">Location<i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="#">Banglore</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        
+                  
+                        <li><a href="#">FAQ</a></li>
+                      </ul>
+                    </div>
+              </li>
+      <li><a href="#">Price range <i class="fas fa-caret-down"></i></a>
+<div class="dropdown-menu">
+              <ul>
+                <li><a href="#">45-50lakh</a></li>
+                <li><a href="#">50-80lakh</a></li>
+                <li><a href="#">80lakh-1Cr</a></li>
+                
+          
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+      </li>
+      
+      <li><a href="file:///C:/Users/Ayushman/Desktop/New%20folder/contact.html">Contact us</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="heading">
+      <h3>Best <span>Homes</span></h3>
+    </div>
+    <div class="box">
+      
+      <div class="dream">
+        <img src="photo.jpg">
+         <img src="property.jpg">
+          <img src="images.jpg">
+           <img src="images (1).jpg">
+            <img src="images (3).jpg">
+            
+      </div>
+
+        <div class="dream">
+        <img src="images (2).jpg">
+         <img src="download.jpg">
+          <img src="8.jpg">
+           <img src="download (1).jpg">
+            <img src="hh.jpg">
+            
+      </div>
+
+        <div class="dream">
+        <img src="hii.jpg">
+         <img src="">
+          <img src="13.jpg">
+           <img src="14.jpg">
+            <img src="15.jpg">
+            
+      </div>
+
+
+
+
+    </div>
+    <div class="btn">
+      <a href="#">More</a>
+    </div>
+
+
+
+
+
+  </div>
+
+</body>
+</html>
